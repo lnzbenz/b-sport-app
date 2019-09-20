@@ -11,6 +11,8 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem } from 'reactstrap';
+    import Logo from '../Login/logo.png'
+    import auth from '../../service/index'
 export default class Header extends Component {
     constructor(props) {
         super(props);
@@ -25,11 +27,15 @@ export default class Header extends Component {
           isOpen: !this.state.isOpen
         });
       }
+      logout = e => {
+        auth.clearToken();
+        this.props.history.push("/");
+      };
     render() {
         return (
             <div>
             <Navbar color="light" light expand="md">
-              <NavbarBrand href="/">BSport</NavbarBrand>
+              <NavbarBrand ><img src={Logo} className="img-fluid" width="320px" /></NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
@@ -37,28 +43,18 @@ export default class Header extends Component {
                     <NavLink href="/components/">Components</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                    <NavLink href="/components/">Components</NavLink>
                   </NavItem>
-                  <UncontrolledDropdown nav inNavbar>
-                    <DropdownToggle nav caret>
-                      Options
-                    </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem>
-                        Option 1
-                      </DropdownItem>
-                      <DropdownItem>
-                        Option 2
-                      </DropdownItem>
-                      <DropdownItem divider />
-                      <DropdownItem>
-                        Reset
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
+                  <NavItem>
+                    <NavLink href="/components/">Components</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/" onClick={this.logout} >LogOut</NavLink>
+                  </NavItem>
                 </Nav>
               </Collapse>
             </Navbar>
+            
           </div>
         )
     }

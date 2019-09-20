@@ -29,7 +29,7 @@ export default class Header extends Component {
         return (
             <div>
             <Navbar color="light" light expand="md">
-              <NavbarBrand href="/">BenSport</NavbarBrand>
+              <NavbarBrand href="/">BSport</NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>

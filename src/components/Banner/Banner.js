@@ -3,37 +3,37 @@ import { UncontrolledCarousel } from 'reactstrap';
 import './Banner.css'
 const items = [
     {
-        src: 'https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+        src: 'https://s3.ap-southeast-1.amazonaws.com/store-front.arifootballstore.com/arifootball/cms/media/BARCELONA-T-HP.jpg',
         altText: 'Slide 1',
-        caption: 'eiei',
+        caption: '',
         header: ''
       },
       {
-        src: 'https://www.vijittresort.com/wp-content/uploads/2019/07/vijitt-home-slide02.jpg',
+        src: 'https://s3.ap-southeast-1.amazonaws.com/store-front.arifootballstore.com/arifootball/cms/media/JUV-AW-LP.jpg',
         altText: 'Slide 2',
         caption: '',
         header: ''
       },
       {
-        src: 'https://www.vijittresort.com/wp-content/uploads/2019/07/vijitt-home-slide03.jpg',
+        src: 'https://s3.ap-southeast-1.amazonaws.com/store-front.arifootballstore.com/arifootball/cms/media/MANU19-LP.jpg',
         altText: 'Slide 3',
         caption: '',
         header: ''
       },
     {
-      src: 'https://www.vijittresort.com/wp-content/uploads/2019/07/vijitt-home-slide04.jpg',
+      src: 'https://s3.ap-southeast-1.amazonaws.com/store-front.arifootballstore.com/arifootball/cms/media/CHE-T-LP.jpg',
       altText: 'Slide 4',
-      caption: '',
+      caption: 'NEW ARRIVALS',
       header: ''
     },
     {
-      src: 'https://www.vijittresort.com/wp-content/uploads/2019/07/vijitt-home-slide05.jpg',
+      src: 'https://s3.ap-southeast-1.amazonaws.com/store-front.arifootballstore.com/arifootball/cms/media/PSGT20-LP.jpg',
       altText: 'Slide 5',
-      caption: '',
+      caption: '=',
       header: ''
     },
     {
-      src: 'https://www.vijittresort.com/wp-content/uploads/2019/07/vijitt-home-slide06.jpg',
+      src: 'https://s3.ap-southeast-1.amazonaws.com/store-front.arifootballstore.com/arifootball/cms/media/shippinglandingpage.jpg',
       altText: 'Slide 6',
       caption: '',
       header: ''

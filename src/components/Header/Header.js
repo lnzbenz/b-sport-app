@@ -37,7 +37,7 @@ export default class Header extends Component {
             <div>
             <Navbar className="bg-header"  expand="md">
               <NavbarBrand ><img src={Logo} className="img-fluid" width="320px" /></NavbarBrand>
-              <NavbarToggler onClick={this.toggle} />
+              <NavbarToggler onClick={this.toggle} />MENU
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>

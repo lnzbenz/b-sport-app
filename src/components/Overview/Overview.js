@@ -15,7 +15,7 @@ export default class Overview extends Component {
                     <Row>
                         <Col md={3}>
                             <div className="">
-                                <Link to={'/'}>
+                                <Link to={'/example'}>
                                     <Card className="m-2 each-food">
                                         <div>
                                             <CardImg top width="250px" height="300px" src='https://s3-ap-southeast-1.amazonaws.com/pcms.arifootballstore.com/catalog/product/cache/image/beff4985b56e3afdbeabfc89641a4582/a/d/adidas_mufc_h_au_jsy_-_reared_ed7387__01_new.jpg?w=400' alt="Card image cap" />

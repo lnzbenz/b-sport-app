@@ -13,6 +13,7 @@ import {
     DropdownItem } from 'reactstrap';
     import Logo from '../Login/logo.png'
     import auth from '../../service/index'
+    import "./Header.css"
 export default class Header extends Component {
     constructor(props) {
         super(props);
@@ -34,19 +35,27 @@ export default class Header extends Component {
     render() {
         return (
             <div>
-            <Navbar color="light" light expand="md">
+            <Navbar className="bg-header"  expand="md">
               <NavbarBrand ><img src={Logo} className="img-fluid" width="320px" /></NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink href="/components/">Components</NavLink>
+                    <NavLink href="/components/">สินค้าแนะนำ</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/components/">Components</NavLink>
+                    <NavLink href="/components/">รองเท้า</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/components/">Components</NavLink>
+                    <NavLink href="/components/">สินค้าอื่นๆ</NavLink>
+                  </NavItem>
+                  <NavItem>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/components/">ติดต่อเรา</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/" onClick={this.logout} >Login</NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink href="/" onClick={this.logout} >LogOut</NavLink>

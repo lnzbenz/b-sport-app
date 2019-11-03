@@ -51,6 +51,12 @@ class Login extends Component {
 					if (data.message !== 'Email or Password Invalid' && data.message !== 'Invalid password' && data.message !== 'Email not found') {
 						localStorage.setItem('token', data.token)
 						this.props.history.push(`/overview`)
+
+						let user = auth.getToken()
+						let userDecoded = auth.decodeToken(user)
+						if (userDecoded.role == "admin") {
+							this.props.history.push('/admin')
+						}
 					}
 				})
 			} else {
@@ -120,11 +126,11 @@ class Login extends Component {
 						</Button>
 					</Form>
 
-				
-					<Link to={`/forgotpass`} style={{ textDecoration: 'none' , fontSize:'22px',marginTop:'5px' }}>
+
+					<Link to={`/forgotpass`} style={{ textDecoration: 'none', fontSize: '22px', marginTop: '5px' }}>
 						Forgot password?
 					</Link>
-					<Link to={`/register`} style={{ textDecoration: 'none', fontSize:'22px' }}>
+					<Link to={`/register`} style={{ textDecoration: 'none', fontSize: '22px' }}>
 						Register!
 					</Link>
 					<div className="err">{this.state.message}</div>

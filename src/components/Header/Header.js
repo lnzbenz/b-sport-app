@@ -36,8 +36,8 @@ export default class Header extends Component {
         return (
             <div>
             <Navbar className="bg-header"  expand="md">
-              <NavbarBrand ><img src={Logo} className="img-fluid" width="320px" /></NavbarBrand>
-              <NavbarToggler onClick={this.toggle} />MENU
+              <NavbarBrand >BSPORT</NavbarBrand>
+              <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
@@ -54,9 +54,7 @@ export default class Header extends Component {
                   <NavItem>
                     <NavLink href="/components/">ติดต่อเรา</NavLink>
                   </NavItem>
-                  <NavItem>
-                    <NavLink href="/" onClick={this.logout} >Login</NavLink>
-                  </NavItem>
+                  
                   <NavItem>
                     <NavLink href="/" onClick={this.logout} >LogOut</NavLink>
                   </NavItem>

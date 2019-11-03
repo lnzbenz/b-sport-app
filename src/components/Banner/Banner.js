@@ -3,7 +3,7 @@ import { UncontrolledCarousel } from 'reactstrap';
 import './Banner.css'
 const items = [
     {
-        src: 'https://s3.ap-southeast-1.amazonaws.com/store-front.arifootballstore.com/arifootball/cms/media/BARCELONA-T-HP.jpg',
+        src: 'https://s3.ap-southeast-1.amazonaws.com/store-front.arifootballstore.com/arifootball/cms/media/MANU19-LP.jpg',
         altText: 'Slide 1',
         caption: '',
         header: ''
@@ -15,7 +15,7 @@ const items = [
         header: ''
       },
       {
-        src: 'https://s3.ap-southeast-1.amazonaws.com/store-front.arifootballstore.com/arifootball/cms/media/MANU19-LP.jpg',
+        src: 'https://s3.ap-southeast-1.amazonaws.com/store-front.arifootballstore.com/arifootball/cms/media/BARCELONA-T-HP.jpg',
         altText: 'Slide 3',
         caption: '',
         header: ''

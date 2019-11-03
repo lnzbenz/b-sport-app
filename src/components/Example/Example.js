@@ -33,7 +33,8 @@ export default class Example extends Component {
                         </Col>
                         <Col md={6} className="d-flex">
                             <div className="my-5">
-                                <h1>HEADER</h1>
+                                <h1>Manchester United kit 2019/2020 </h1>
+                                <h3>Brand Adidas</h3>
                                 <Form>
                                     <FormGroup tag="fieldset">
                                         <legend>Size</legend>
@@ -57,10 +58,20 @@ export default class Example extends Component {
                                                 <Input type="radio" name="radio1" />{' '}XL
                                                 </Label>
                                         </FormGroup>
+                                        <FormGroup check>
+                                            <Label check>
+                                                <Input type="radio" name="radio1" />{' '}2XL
+                                                </Label>
 
+
+                                        </FormGroup>
+
+                                      
                                     </FormGroup>
                                 </Form>
-                                <Link to={'/order'}><Button color="success">Sent Order</Button></Link>
+                                <Link to={''}><Button contextMenu="success">จองไว้ที่รถเข็น</Button></Link>
+                                
+                                <Link to={'/order'}><Button className="ml-2" color="success">สั่งซื้อสินค้า</Button></Link>
                             </div>
                         </Col>
 

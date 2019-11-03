@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Card, CardImg, CardText, CardBody, CardLink, CardTitle, CardSubtitle, Container, Row, Col } from 'reactstrap';
-import './Overview.css'
+
 import Banner from '../Banner/Banner'
 export default class Overview extends Component {
     render() {

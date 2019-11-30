@@ -35,26 +35,27 @@ export default class Header extends Component {
     render() {
         return (
             <div>
+              
             <Navbar className="bg-header"  expand="md">
               <NavbarBrand >BSPORT</NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink href="/components/">สินค้าแนะนำ</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="/components/">รองเท้า</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="/components/">สินค้าอื่นๆ</NavLink>
-                  </NavItem>
-                  <NavItem>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="/components/">ติดต่อเรา</NavLink>
+                  <NavLink href="/overview">หน้าหลัก</NavLink>
                   </NavItem>
                   
+                  <NavItem>
+                    <NavLink href="/favorite">สินค้าที่ชื่นชอบ</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/orderCompleted">สินค้าที่ทำการสั่งซื้อแล้ว</NavLink>
+                  </NavItem>
+                
+                  <NavItem>
+                    <NavLink href="/contact/">ติดต่อเรา</NavLink>
+                  </NavItem>
+                
                   <NavItem>
                     <NavLink href="/" onClick={this.logout} >LogOut</NavLink>
                   </NavItem>
@@ -63,6 +64,7 @@ export default class Header extends Component {
             </Navbar>
             
           </div>
+ 
         )
     }
 }
